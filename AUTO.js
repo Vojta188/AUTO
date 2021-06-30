@@ -1,15 +1,15 @@
 let car =
 {
-    znacka:"BMW",
-    nadrz: 65,
+    znacka:"Aston Martin",
+    nadrz: 90,
     spotrebenasto: 0.05,
     celkemUjeto:0,
-    dojezd:  1300,
+    dojezd:  1500,
     
     
     
     
-    vypoctiSpotrebu(km)
+    vypoctiSpotrebuAuta(km)
     {
        vypocti =  km * this.spotrebenasto
         
@@ -44,13 +44,13 @@ let car =
 
    
 
-    natankuj(tankuju)
+    tankuj(tankuju)
     {
-        if(this.nadrz < 65)
+        if(this.nadrz < 90)
         {
-            if(this.nadrz + tankuju > 65)
+            if(this.nadrz + tankuju > 90)
             {
-                this.nadrz = 65;
+                this.nadrz = 90;
         console.log(`Natankoval jsi 65 L aktuálně máš v nádrži MAXIMUM`);
             }
             else
@@ -70,7 +70,7 @@ let car =
     },
 
 
-    vypis()
+    vypisStav()
     {
         console.log(
             `
